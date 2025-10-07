@@ -4,8 +4,8 @@ A small UI component library built with React, TypeScript, and styled-components
 
 ## Requirements
 - Node.js 18+ (recommended 20)
-- npm (bundled with Node)
-- Docker (optional, for containerized run)
+- npm
+- Docker
 
 
 ## Install
@@ -26,7 +26,6 @@ npm run storybook
 ```
 
 ## Run with Docker (production build on 8083)
-This repository includes a multi-stage Dockerfile that builds the production bundle and serves it via `serve`.
 
 Build image:
 ```bash
