@@ -1,1 +1,3 @@
-export interface ImgProps extends React.ImgHTMLAttributes<HTMLImageElement> { disabled?: boolean }
+export interface ImgProps extends React.ImgHTMLAttributes<HTMLImageElement> {
+  disabled?: boolean;
+}

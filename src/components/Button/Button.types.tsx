@@ -1,1 +1,3 @@
-export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> { disabled?: boolean }
+export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  disabled?: boolean;
+}

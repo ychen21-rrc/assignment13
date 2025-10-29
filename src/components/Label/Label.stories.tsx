@@ -5,11 +5,11 @@ const meta: Meta<typeof Label> = {
   title: 'Components/Label',
   component: Label,
   argTypes: {
-    children: { control: 'text' }
+    children: { control: 'text' },
   },
   args: {
-    children: 'Label Text'
-  }
+    children: 'Label Text',
+  },
 };
 export default meta;
 type Story = StoryObj<typeof Label>;

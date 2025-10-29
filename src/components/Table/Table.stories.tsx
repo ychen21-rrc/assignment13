@@ -5,7 +5,7 @@ const meta: Meta<typeof Table> = {
   title: 'Components/Table',
   component: Table,
   args: { disabled: false },
-  argTypes: { disabled: { control: 'boolean' } }
+  argTypes: { disabled: { control: 'boolean' } },
 };
 export default meta;
 type Story = StoryObj<typeof Table>;
@@ -22,7 +22,7 @@ export const Default: Story = {
       </tbody>
       <TableFooter>Footer</TableFooter>
     </Table>
-  )
+  ),
 };
 
 export const Disabled: Story = { args: { disabled: true } };

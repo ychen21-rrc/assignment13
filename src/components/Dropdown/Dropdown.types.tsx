@@ -1,1 +1,5 @@
-export interface DropdownProps { options: string[]; disabled?: boolean; onChange?: (value: string) => void }
+export interface DropdownProps {
+  options: string[];
+  disabled?: boolean;
+  onChange?: (value: string) => void;
+}

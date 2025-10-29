@@ -1,1 +1,3 @@
-export interface TableProps extends React.HTMLAttributes<HTMLTableElement> { disabled?: boolean }
+export interface TableProps extends React.HTMLAttributes<HTMLTableElement> {
+  disabled?: boolean;
+}

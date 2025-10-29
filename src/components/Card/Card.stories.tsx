@@ -5,8 +5,8 @@ const meta: Meta<typeof Card> = {
   title: 'Components/Card',
   component: Card,
   args: {
-    children: 'Card content'
-  }
+    children: 'Card content',
+  },
 };
 export default meta;
 type Story = StoryObj<typeof Card>;

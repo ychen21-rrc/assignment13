@@ -7,8 +7,8 @@ const StyledInput = styled.input<{ $disabled?: boolean }>`
   border-radius: 10px;
   border: 1px solid #ccc;
   width: 100%;
-  background: ${({$disabled}) => $disabled ? '#f0f0f0' : 'white'};
-  pointer-events: ${({$disabled}) => $disabled ? 'none' : 'auto'};
+  background: ${({ $disabled }) => ($disabled ? '#f0f0f0' : 'white')};
+  pointer-events: ${({ $disabled }) => ($disabled ? 'none' : 'auto')};
 `;
 
 export const Text: React.FC<TextProps> = ({ disabled, ...rest }) => {

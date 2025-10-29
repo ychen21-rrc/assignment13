@@ -21,12 +21,21 @@ const Overlay = styled.div<{ $disabled?: boolean }>`
   display: grid;
   place-items: center;
   text-align: center;
-  background: ${({$disabled}) => $disabled ? 'rgba(0,0,0,0.25)' : 'linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.35))'};
+  background: ${({ $disabled }) =>
+    $disabled
+      ? 'rgba(0,0,0,0.25)'
+      : 'linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.35))'};
   color: white;
   padding: 2rem;
 `;
 
-export const HeroImage: React.FC<HeroImageProps> = ({ src, alt, heading, subheading, disabled }) => {
+export const HeroImage: React.FC<HeroImageProps> = ({
+  src,
+  alt,
+  heading,
+  subheading,
+  disabled,
+}) => {
   return (
     <Wrapper $disabled={disabled}>
       <Image src={src} alt={alt} />

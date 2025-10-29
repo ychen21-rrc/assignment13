@@ -6,8 +6,8 @@ const Wrapper = styled.label<{ $disabled?: boolean }>`
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  opacity: ${({$disabled}) => $disabled ? 0.6 : 1};
-  cursor: ${({$disabled}) => $disabled ? 'not-allowed' : 'pointer'};
+  opacity: ${({ $disabled }) => ($disabled ? 0.6 : 1)};
+  cursor: ${({ $disabled }) => ($disabled ? 'not-allowed' : 'pointer')};
 `;
 
 export const RadioButton: React.FC<RadioButtonProps> = ({ name, value, label, disabled }) => {

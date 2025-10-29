@@ -13,10 +13,23 @@ import sky from './images/sky.jpg';
 
 function App() {
   return (
-    <div style={{padding: 24, display: 'grid', gap: 16}}>
+    <div style={{ padding: 24, display: 'grid', gap: 16 }}>
       <h1>Component Library Demo</h1>
-      <Button onClick={()=>{}}>Primary</Button>
-      <Button disabled onClick={()=>{}}>Disabled</Button>
+      <Button
+        onClick={(e: React.MouseEvent) => {
+          e.preventDefault();
+        }}
+      >
+        Primary
+      </Button>
+      <Button
+        disabled
+        onClick={(e: React.MouseEvent) => {
+          e.preventDefault();
+        }}
+      >
+        Disabled
+      </Button>
       <Card>
         <Label htmlFor="name">Name</Label>
         <Text id="name" placeholder="Enter your name" />
@@ -24,7 +37,7 @@ function App() {
         <RadioButton name="choice" value="A" label="Option A" />
         <RadioButton name="choice" value="B" label="Option B" />
       </Card>
-      
+
       <Table>
         <TableHeader>Header</TableHeader>
         <tbody>
@@ -36,7 +49,7 @@ function App() {
         <TableFooter>Footer</TableFooter>
       </Table>
       <Img alt="Sample" src={sky} />
-      <HeroImage alt="Hero" src={aurora} heading="Hello" subheading="Responsive hero"/>
+      <HeroImage alt="Hero" src={aurora} heading="Hello" subheading="Responsive hero" />
     </div>
   );
 }

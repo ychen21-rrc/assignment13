@@ -6,12 +6,12 @@ const meta: Meta<typeof Text> = {
   component: Text,
   argTypes: {
     disabled: { control: 'boolean' },
-    placeholder: { control: 'text' }
+    placeholder: { control: 'text' },
   },
   args: {
     placeholder: 'Type here',
-    disabled: false
-  }
+    disabled: false,
+  },
 };
 export default meta;
 type Story = StoryObj<typeof Text>;

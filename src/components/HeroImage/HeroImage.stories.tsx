@@ -6,7 +6,11 @@ const meta: Meta<typeof HeroImage> = {
   title: 'Components/HeroImage',
   component: HeroImage,
   args: { src: aurora, alt: 'Hero', heading: 'Welcome', subheading: 'Subheading', disabled: false },
-  argTypes: { disabled: { control: 'boolean' }, heading: { control: 'text' }, subheading: { control: 'text' } }
+  argTypes: {
+    disabled: { control: 'boolean' },
+    heading: { control: 'text' },
+    subheading: { control: 'text' },
+  },
 };
 export default meta;
 type Story = StoryObj<typeof HeroImage>;

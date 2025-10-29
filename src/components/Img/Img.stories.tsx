@@ -6,7 +6,11 @@ const meta: Meta<typeof Img> = {
   title: 'Components/Img',
   component: Img,
   args: { src: sky, alt: 'Example', disabled: false },
-  argTypes: { disabled: { control: 'boolean' }, src: { control: 'text' }, alt: { control: 'text' } }
+  argTypes: {
+    disabled: { control: 'boolean' },
+    src: { control: 'text' },
+    alt: { control: 'text' },
+  },
 };
 export default meta;
 type Story = StoryObj<typeof Img>;

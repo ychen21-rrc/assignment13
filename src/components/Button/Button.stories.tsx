@@ -6,12 +6,12 @@ const meta: Meta<typeof Button> = {
   component: Button,
   argTypes: {
     children: { control: 'text' },
-    disabled: { control: 'boolean' }
+    disabled: { control: 'boolean' },
   },
   args: {
     children: 'Click me',
-    disabled: false
-  }
+    disabled: false,
+  },
 };
 export default meta;
 type Story = StoryObj<typeof Button>;

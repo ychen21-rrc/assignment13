@@ -1,1 +1,3 @@
-export interface CardProps extends React.HTMLAttributes<HTMLDivElement> { disabled?: boolean }
+export interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
+  disabled?: boolean;
+}
